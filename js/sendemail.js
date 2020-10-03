@@ -22,6 +22,8 @@
               return err;
             }
             $(document).ready(function(){
+
+  
 				"use strict"; 
               $("#button").click(function(e){
                 if(validateForm()){
@@ -45,3 +47,8 @@
               });
             });
         
+function sendMail() {
+  var link = "mailto:rebeccadavidsson3@gmail.com";
+
+  window.location.href = link;
+}

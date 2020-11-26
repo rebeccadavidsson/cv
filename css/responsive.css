@@ -163,6 +163,9 @@
         overflow-x: auto;
         overflow-y: auto;
     }
+    .portfolio .jspContainer {
+    overflow: hidden;
+     }
     .codrops-top a {
         background: #000;
         color: #fff;

@@ -55,8 +55,8 @@
    #Grid
    ========================================================================== */
 .portfolio .inner {
-    overflow-y: scroll;
-    height: -webkit-fill-available;
+    /* overflow-y: scroll;
+    height: -webkit-fill-available; */
 }
 .inner .title {
     transform: scale(1);
@@ -130,6 +130,11 @@
     display: inline !important;
     margin: 0 0 30px
 }
+
+.portfolio .jspContainer {
+    overflow: auto !important;
+     }
+
 /* ==========================================================================
    #Slideshow
    ========================================================================== */
@@ -220,6 +225,8 @@
 .slideshow figcaption h3, .slideshow figcaption span {
     color: #818181;
 }
+
+
 /* ==========================================================================
    #Navigation
    ========================================================================== */

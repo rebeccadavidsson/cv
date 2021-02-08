@@ -54,9 +54,76 @@
 /* ==========================================================================
    #Grid
    ========================================================================== */
-.portfolio .inner {
-    /* overflow-y: scroll;
-    height: -webkit-fill-available; */
+
+.transparent-background {
+    opacity: 0.5;
+    position: absolute;
+    top: 4em;
+    transform: rotate(-22deg);
+}
+.transparent-background2 {
+    opacity: 0.3;
+    position: absolute;
+    top: 42em;
+    left: 0;
+}
+.transparent-background3 {
+    opacity: 0.2;
+    position: absolute;
+    top: 56em;
+    transform: rotate(-15deg);
+}
+.title-divider-small-mobile {
+    display: none;
+}
+.grid-title-mobile {
+    display: none;
+}
+@media (max-width: 770px) {
+    .transparent-background, .transparent-background2, .transparent-background3 {
+        display: none;
+    }
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.firstitem {
+    height: 12em;
+    position: absolute;
+    margin-top: 1.5em;
+    z-index: 3;
+    width: 31%;
+}
+.seconditem {
+    height: 10em;
+    position: absolute;
+    z-index: 2;
+    margin-top: 0em;
+    width: 29%;
+}
+.thirditem {
+    height: 8em;
+    margin-top: -1.5em;
+    position: absolute;
+    z-index: 1;
+    width: 25%;
+}
+.portfolio-grid-item img {
+    border-radius: 6px;
+    /* max-height: 13.8em; */
+    filter: drop-shadow(5px 6px 8px black);
+    transition: 0.5s;
+}   
+.portfolio-grid-item:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.grid-title {
+    /* margin-top: 13.5em; */
+    margin-top: 0;
+    margin-bottom: 3em;
 }
 .inner .title {
     transform: scale(1);
